@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# While loop and case condition that prints bad luck after at the 4th,9th and 17th time
+number=1
+while [ $number -le 20 ]
+do
+     echo $number
+     case "$number" in
+        4)
+          echo "bad luck from China"
+          ;;
+        9)
+          echo "bad luck from Japan"
+          ;;
+        17)
+          echo "bad luck from Italy"
+          ;;
+     esac
+     ((number++))
+done

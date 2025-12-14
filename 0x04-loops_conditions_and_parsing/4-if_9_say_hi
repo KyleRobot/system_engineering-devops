@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# While loop and if condition that prints Best School 9 times and then prints hi b4 printing the 10th time
+number=0
+while [ $number -lt 10 ]
+do
+     if [ $number -eq 9 ]; then
+          echo "hi"
+     fi
+     echo "Best School"
+     ((number++))
+done
